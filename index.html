@@ -49,7 +49,7 @@
         }
 
         /* ==========================================
-           一、頂部導航欄 (Top Navigation Bar)
+           一、頂部導航欄
            ========================================== */
         .navbar {
             position: fixed;
@@ -131,7 +131,7 @@
             transform: rotate(180deg);
         }
 
-        /* 下拉選單 (Dropdown Menu) - 桌機版 */
+        /* 下拉選單 - 桌機版 */
         @media (min-width: 1025px) {
             .dropdown-menu {
                 position: absolute;
@@ -184,7 +184,7 @@
             padding: 5px;
         }
 
-        /* 修復高度後的 Header Banner */
+        /* Header Banner */
         header {
             background: linear-gradient(rgba(30, 41, 51, 0.35), rgba(15, 23, 30, 0.45)), 
                         url('IMG_78341.jpg') no-repeat center center / cover;
@@ -267,7 +267,7 @@
             margin-bottom: 16px;
         }
 
-        /* 二、參與者統計方塊 */
+        /* 二、參與者統計 */
         .stats-section-card {
             background: var(--card-bg);
             padding: 30px;
@@ -421,7 +421,7 @@
         }
 
         /* ==========================================
-           二、「橫向滑動卡片式相簿」專用 CSS 樣式
+           二、橫向滑動卡片式相簿 CSS 樣式
            ========================================== */
         .gallery-wrapper {
             position: relative;
@@ -570,7 +570,7 @@
             border-radius: 5px;
         }
 
-        /* 數據高亮卡片 */
+        /* 數據卡片 */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -727,7 +727,7 @@
             color: var(--accent-color);
         }
 
-        /* 抽象路線圖表 */
+        /* 路線圖表 */
         .node-network {
             display: flex;
             justify-content: space-between;
@@ -769,7 +769,7 @@
             min-height: 80px;
         }
 
-        /* 研究倫理卡片 */
+        /* 倫理卡片 */
         .ethics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -797,10 +797,10 @@
         }
         
         /* ==========================================
-        三、主要實證研究結果 (Section 3.1 Custom CSS)
+        三、主要實證研究結果
         ========================================== */
 
-        /* 高亮概述卡片 */
+        /* 概述卡片 */
         .highlight-card {
             border-left: 4px solid var(--accent-color);
             background-color: var(--card-bg);
@@ -846,7 +846,7 @@
             margin-top: 15px;
         }
 
-        /* 強制將第 3 區 Section 3 的 4 個卡片排成 4 欄平行 */
+        /* 第 3 區 Section 3 的 4 個卡片 */
         #p3-1 .card-grid {
             display: grid !important;
             grid-template-columns: repeat(4, 1fr) !important;
@@ -961,7 +961,7 @@
         .badge-warning { background-color: var(--accent-color); }
         .badge-danger { background-color: #E53E3E; }
 
-        /* 街頭引言網格 */
+        /* 引言網格 */
         .quotes-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1018,7 +1018,7 @@
             font-weight: bold;
         }
 
-        /* 行動倡議與時程表 */
+        /* 行動倡議 */
         .action-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1050,7 +1050,7 @@
             margin-bottom: 8px;
         }
 
-        /* Styling for links specifically inside Reference List (#p5-1) */
+        /* Styling for links specifically inside Reference List */
         #p5-1 a {
             color: var(--primary-color);
             text-decoration: underline;
@@ -1068,7 +1068,7 @@
             color: var(--text-muted);
         }
 
-        /* 頁尾樣式修復 */
+        /* 頁尾樣式 */
         footer {
             background: var(--primary-color);
             color: var(--soft-accent);
@@ -1375,7 +1375,7 @@
         <div id="p2-2" class="page-section">
             <h2 class="page-title"><i class="fa-solid fa-users-viewfinder"></i>照片與受訪故事</h2>
             
-            <!-- 1. 視覺相簿區塊 (Moved Before Stories) -->
+            <!-- 1. 相簿區塊 -->
             <div class="info-card intro-card" style="margin-bottom: 15px;">
                 <p style="font-size: 0.95rem; color: var(--text-color);">
                     <i class="fa-solid fa-camera-retro" style="color: var(--accent-color); margin-right: 6px;"></i>
@@ -1535,7 +1535,7 @@
                 <button class="tab-btn" onclick="showStory(2)">孫先生：高齡、哮喘與公屋輪候</button>
             </div>
 
-            <!-- 阿B (Keep 'active') -->
+            <!-- 阿B -->
             <div class="story-content active">
                 <div class="story-card-header">
                     <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
@@ -1560,7 +1560,7 @@
                 </div>
             </div>
 
-            <!-- 葉先生與A先生 (Removed 'active') -->
+            <!-- 葉先生與A先生 -->
             <div class="story-content">
                 <div class="story-card-header">
                     <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
@@ -1590,7 +1590,7 @@
                 </div>
             </div>
 
-            <!-- Sam / 受訪者X (Removed 'active') -->
+            <!-- 孫先生 -->
             <div class="story-content">
                 <div class="story-card-header">
                     <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
@@ -1701,7 +1701,7 @@
             </div>
         </div>
 
-        <!-- 3.1 主要實證研究結果 -->
+        <!-- 3.1 主要研究結果 -->
         <div id="p3-1" class="page-section">
             <h2 class="page-title"><i class="fa-solid fa-chart-pie"></i> 主要研究結果</h2>
 
@@ -1866,7 +1866,7 @@
         <div id="p4-1" class="page-section">
             <h2 class="page-title"><i class="fa-solid fa-lightbulb"></i>研究結果分析與可操作政策建議</h2>
             
-        <!-- 研究結果核心洞察分析 (Left-Border List) -->
+        <!-- 研究結果分析 -->
         <div class="info-card">
             <h3 style="color: var(--primary-color); margin-bottom: 12px;"><i class="fa-solid fa-magnifying-glass-chart"></i> 研究結果分析：無家者處境的多元成因與支援需求</h3>
             <p style="margin-bottom: 20px;">綜合訪談數據與個案觀察，無家者在重建生活的過程中主要面臨以下三項現實挑戰：</p>
@@ -1889,7 +1889,7 @@
             </div>
         </div>
 
-<!-- 具體支援優化建議表格 -->
+<!-- 具體優化建議表格 -->
         <div class="info-card">
             <h3 style="color: var(--primary-color); margin-bottom: 12px;"><i class="fa-solid fa-sliders"></i> 具體與可操作支援建議</h3>
             <div class="table-wrapper">
@@ -1988,7 +1988,7 @@
     <script>
         let leafletMap = null;
 
-        // 抽象資源節點數據集
+        // 資源節點數據集
         const nodeData = [
             {
                 title: "24小時便利店/快餐店",
