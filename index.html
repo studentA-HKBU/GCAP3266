@@ -1050,6 +1050,24 @@
             margin-bottom: 8px;
         }
 
+        /* Styling for links specifically inside Reference List (#p5-1) */
+        #p5-1 a {
+            color: var(--primary-color);
+            text-decoration: underline;
+            text-decoration-color: var(--accent-color);
+            text-underline-offset: 3px;
+            transition: color 0.2s ease, text-decoration-color 0.2s ease;
+        }
+
+        #p5-1 a:hover {
+            color: var(--accent-color);
+            text-decoration-color: var(--primary-color);
+        }
+
+        #p5-1 a:visited {
+            color: var(--text-muted);
+        }
+
         /* 頁尾樣式修復 */
         footer {
             background: var(--primary-color);
@@ -1148,8 +1166,7 @@
                     </div>
                     <ul class="dropdown-menu">
                         <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p1-1')">研究背景與問題定義</a></li>
-                        <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p1-2')">研究動機</a></li>
-                        <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p1-3')">研究目的與意義</a></li>
+                        <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p1-2')">研究動機、目的與意義</a></li>
                     </ul>
                 </li>
 
@@ -1160,7 +1177,7 @@
                     </div>
                     <ul class="dropdown-menu">
                         <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p2-1')">研究方法</a></li>
-                        <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p2-2')">受訪故事與照片</a></li>
+                        <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p2-2')">照片與受訪故事</a></li>
                         <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p2-3')">互動式地圖</a></li>
                         <li class="dropdown-item"><a href="javascript:void(0)" onclick="switchPage('p2-4')">紀錄片</a></li>
                     </ul>
@@ -1213,7 +1230,7 @@
 
         <!-- 0. 專案簡介 -->
         <div id="p0-intro" class="page-section active">
-            <h2 class="page-title"><i class="fa-solid fa-circle-info"></i> 專案簡介 (Project Overview)</h2>
+            <h2 class="page-title"><i class="fa-solid fa-circle-info"></i> 研究簡介</h2>
             <div class="info-card">
                 <img src="IMG_7446 (2).jpg" alt="深水埗街頭" class="intro-banner-img">
                 
@@ -1234,7 +1251,7 @@
             <h2 class="page-title"><i class="fa-solid fa-book-open"></i>研究背景與問題定義</h2>
             
             <div class="info-card intro-card">
-                <p>無家狀態（Homelessness）不僅僅是「缺乏屋頂」，而是一個複雜且多維度的社會現象。本研究聚焦於香港深水埗區，旨在呈現無家者日常生活的真實多樣性，並探索背後的系統性成因。</p>
+                <p><strong>無家狀態</strong>（Homelessness）不僅僅是「缺乏屋頂」，而是一個複雜且多維度的社會現象。本研究聚焦於香港深水埗區，旨在呈現無家者日常生活的真實多樣性，並探索背後的系統性成因。</p>
                 <p>我們堅持<strong>「理解而非評價」</strong>的立場。每一個走上街頭的生命個體，都有其獨特的歷史與應對生存挑戰的韌性。透過公共教育，我們希望能破除社會偏見，還原人的尊嚴。</p>
             </div>
 
@@ -1262,24 +1279,36 @@
             </div>
         </div>
 
-        <!-- 1.2 研究動機 -->
+<!-- 1.2 研究動機 -->
         <div id="p1-2" class="page-section">
-            <h2 class="page-title"><i class="fa-solid fa-compass"></i>研究動機</h2>
+            <h2 class="page-title"><i class="fa-solid fa-compass"></i> 動機、目的與意義</h2>
+            
             <div class="info-card">
-                <h3 style="color: var(--primary-color); margin-bottom: 15px;">從公眾冷漠到結構分析</h3>
-                <p>在日常社會輿論中，我們常能聽到如「有手有腳點會無屋住」等將無家狀態完全歸咎於「個人道德或努力不足」的批判。這種將複雜社會問題簡化為個人失敗的觀點，掩蓋了背後龐大的制度性障點。</p>
-                <p style="margin-top: 15px;">本研究的動機在於打破這層刻板印象，透過第一手調查與受訪者敘事，填補公眾理解與實際街頭生存狀態之間的巨大溝鴻。</p>
+                <h3 style="color: var(--primary-color); margin-bottom: 12px;"><i class="fa-solid fa-cloud-rain"></i> 從公眾刻板印象到結構性批判</h3>
+                <p>在日常大眾輿論與媒體報導中，社會往往傾向將露宿現象歸咎於「個人道德失格」、「個體努力不足」或「犯罪隱患」。類似「有手有腳點會無屋住」的批判，將複雜的社會邊緣化歷程過度簡化為個人失敗，掩蓋了背後龐大的居住資本化、公共福利網制度性缺口以及勞動市場排斥機制。</p>
+                <p style="margin-top: 12px;">本研究動機源於對此類偏見的省思，旨在透過第一手質性調研與空間路徑紀錄，填補公眾認知與街頭生存現實之間的巨大鴻溝，還原無家者作為「社會人」的主體性與生命韌性。</p>
             </div>
-        </div>
 
-        <!-- 1.3 計畫目的與意義 -->
-        <div id="p1-3" class="page-section">
-            <h2 class="page-title"><i class="fa-solid fa-bullseye"></i>計畫目的與意義</h2>
+            <!-- 1.3 研究目的與意義 -->                        
             <div class="info-card">
-                <ul style="padding-left: 20px; line-height: 2;">
-                    <li><strong>去標籤化與尊嚴重建：</strong>透過去刻板印象的視覺與文字紀錄，還原無家者的個人主體性。</li>
-                    <li><strong>公共教育向下扎根：</strong>結合歷史創傷紀錄策略，推動青年與兒童之同理心教育。</li>
-                    <li><strong>空間正義倡議：</strong>XXX</li>
+                <h3 style="color: var(--primary-color); margin-bottom: 12px;"><i class="fa-solid fa-cloud-rain"></i> 研究目的與實踐意義</h3>
+                <ul style="padding-left: 20px; line-height: 2.2;">
+                    <li>
+                        <strong>去標籤化與主體尊嚴重建：</strong>
+                        透過去刻板印象的質性訪談與影像紀錄，翻轉傳統「獵奇」或「悲情」的俯視視角，還原無家者在面對系統性困境時的日常應對策略與個人尊嚴。
+                    </li>
+                    <li>
+                        <strong>促進空間正義與友善環境倡議：</strong>
+                        批判城市空間過度「微觀控制」與「敵意建築」（如公園扶手隔板、突擊清場）的現象，倡議保障無家者的公共空間使用權，實現包容性的社區發展。
+                    </li>
+                    <li>
+                        <strong>深化結構性分析與政策轉銜優化：</strong>
+                        揭示昂貴租金、公屋輪候過長、醫療與派飯資源衝突等結構性制度障礙，為政府及民間機構在住宅轉銜、精神健康支持與物資發放時程上提供具體、可操作的改善方案。
+                    </li>
+                    <li>
+                        <strong>推動公共教育與世代同理心向下扎根：</strong>
+                        結合歷史創傷調查與多媒體紀錄策略，將研究成果轉化為適合青少年與兒童的同理心教材，從教育層面破除世代相傳的邊緣化標籤。
+                    </li>
                 </ul>
             </div>
         </div>
@@ -1289,18 +1318,18 @@
             <h2 class="page-title"><i class="fa-solid fa-microscope"></i>研究方法</h2>
             <div class="info-card">
                 <h3 style="color: var(--primary-color); margin-bottom: 12px;">研究設計與倫理框架</h3>
-                <p>本研究採用混合質性研究設計，結合深度訪談、參與式視覺攝影與空間路徑記錄：</p>
+                <p>本研究採用混合質性研究設計，結合深度訪談、攝影與空間路徑記錄：</p>
                 <ul style="padding-left: 20px; margin-top: 10px; line-height: 2;">
                     <li><strong>樣本數：</strong>深入訪談 9 位居住於深水埗的無家者及 15 位社區關鍵持份者。</li>
                     <li><strong>嚴格匿名：</strong>所有個案均採用化名，並刪除具體可識別個人身分之細節。</li>
-                    <li><strong>視覺倫理：</strong>攝影僅記錄肢體、物品、影相及空間，絕不露臉或標示真實睡眠門牌。</li>
+                    <li><strong>倫理：</strong>除非得到當事人額外許可，攝影僅記錄肢體、物品、影相及空間，絕不露臉或標示精確位置。</li>
                 </ul>
             </div>
             <!-- 2. 參與者與取樣 + 統計方塊 -->
             <div class="info-card"> 
                 <div class="content-card">
                     <h3 style="color: var(--primary-color); margin-bottom: 12px;">參與者與取樣</h3>
-                    <p>本研究採用立意取樣（Purposive Sampling）與滾雪球取樣（Snowball Sampling）相結合的方式。為了確保樣本具備高度代表性與社區真實性，我們深入訪談了深水埗區的無家者，並同時徵詢了在地多方利益相關者（Stakeholders）的意見：</p>
+                    <p>本研究採用立意取樣（Purposive Sampling）與滾雪球取樣（Snowball Sampling）相結合的方式。為了確保樣本具備高度代表性與社區真實性，我們深入訪談了深水埗區的無家者，並同時徵詢了在地多方利益相關者的意見：</p>
 
                     <!-- 參與者統計方塊 -->
                     <div class="stats-grid-custom">
@@ -1311,12 +1340,12 @@
                         </div>
                         <div class="stat-card-custom">
                             <div class="num">11 位</div>
-                            <div class="label">社區關鍵持份者 (Non-homeless)</div>
+                            <div class="label">社區關鍵持份者</div>
                             <div class="subtext">含在地居民、商戶、清潔工、保安員及街坊等</div>
                         </div>
                         <div class="stat-card-custom">
                             <div class="num">4 位</div>
-                            <div class="label">前線社工與 NGO 團隊</div>
+                            <div class="label">NGO 團隊</div>
                             <div class="subtext">包含 ImpactHK 社工、護士、營運者及前線救世軍人員</div>
                         </div>
                     </div>
@@ -1342,77 +1371,20 @@
             </div>
         </div>
 
-        <!-- 2.2 受訪故事 + 相簿 -->
+<!-- 2.2 相簿 + 受訪故事 -->
         <div id="p2-2" class="page-section">
-            <h2 class="page-title"><i class="fa-solid fa-users-viewfinder"></i>受訪故事與照片</h2>
+            <h2 class="page-title"><i class="fa-solid fa-users-viewfinder"></i>照片與受訪故事</h2>
             
-            <div class="story-tabs">
-                <button class="tab-btn active" onclick="showStory(0)">XX：e.g.高齡勞動與空間限制</button>
-                <button class="tab-btn" onclick="showStory(1)">XX：XXXXXX</button>
-                <button class="tab-btn" onclick="showStory(2)">XX：XXXXXX</button>
-            </div>
-
-            <!-- 強哥 -->
-            <div class="story-content active">
-                <div class="story-card-header">
-                    <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
-                    <div class="story-profile">
-                        <h3>受訪者X（約 XX 歲）</h3>
-                        <p>曾任體力勞動者，現於深水埗XX生活約XX年</p>
-                    </div>
-                </div>
-                <p>XX因e.g.年長及舊傷無法承擔長期粗重工作，僅能靠零星散工維生。面對深水埗昂貴且環境惡劣的劏房，他選擇暫居公共空間。每天清晨，他在公共設施清洗整頓，並在特定時間前收拾好所有物品，以避開清潔與執法行動。公共座椅加設扶手等防無家者設計，讓他日益感受空間的排斥。</p>
-                <div class="story-tags">
-                    <span class="story-tag-pill">防禦性架構設計</span>
-                    <span class="story-tag-pill">高齡高租金困境</span>
-                    <span class="story-tag-pill">空間資源存取</span>
-                </div>
-            </div>
-
-            <!-- 阿蓮 -->
-            <div class="story-content active">
-                <div class="story-card-header">
-                    <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
-                    <div class="story-profile">
-                        <h3>受訪者X（約 XX 歲）</h3>
-                        <p>曾任體力勞動者，現於深水埗XX生活約XX年</p>
-                    </div>
-                </div>
-                <p>XX因e.g.年長及舊傷無法承擔長期粗重工作，僅能靠零星散工維生。面對深水埗昂貴且環境惡劣的劏房，他選擇暫居公共空間。每天清晨，他在公共設施清洗整頓，並在特定時間前收拾好所有物品，以避開清潔與執法行動。公共座椅加設扶手等防無家者設計，讓他日益感受空間的排斥。</p>
-                <div class="story-tags">
-                    <span class="story-tag-pill">女性安全風險</span>
-                    <span class="story-tag-pill">隱形露宿現象</span>
-                    <span class="story-tag-pill">專用庇護資源短缺</span>
-                </div>
-            </div>
-
-            <!-- Sam -->
-            <div class="story-content active">
-                <div class="story-card-header">
-                    <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
-                    <div class="story-profile">
-                        <h3>受訪者X（約 XX 歲）</h3>
-                        <p>曾任體力勞動者，現於深水埗XX生活約XX年</p>
-                    </div>
-                </div>
-                <p>XX因e.g.年長及舊傷無法承擔長期粗重工作，僅能靠零星散工維生。面對深水埗昂貴且環境惡劣的劏房，他選擇暫居公共空間。每天清晨，他在公共設施清洗整頓，並在特定時間前收拾好所有物品，以避開清潔與執法行動。公共座椅加設扶手等防無家者設計，讓他日益感受空間的排斥。</p>
-                <div class="story-tags">
-                    <span class="story-tag-pill">青年居住困境</span>
-                    <span class="story-tag-pill">就業與居住循環</span>
-                    <span class="story-tag-pill">轉銜支援需求</span>
-                </div>
-            </div>
-
-            <!-- 視覺相簿區塊 -->
-            <div class="info-card intro-card" style="margin-top: 30px; margin-bottom: 15px;">
+            <!-- 1. 視覺相簿區塊 (Moved Before Stories) -->
+            <div class="info-card intro-card" style="margin-bottom: 15px;">
                 <p style="font-size: 0.95rem; color: var(--text-color);">
                     <i class="fa-solid fa-camera-retro" style="color: var(--accent-color); margin-right: 6px;"></i>
-                    <strong>深水埗街頭視覺：</strong>本展覽區塊採用示意照片，呈現深水埗街頭、公共設施與日常空間氛圍。
-                    <br><span style="font-size: 0.85rem; color: var(--text-muted);">倫理與隱私保護說明：圖片均進行模糊處理，不呈現任何可辨識個人面貌或具體地理門牌。</span>
+                    <strong>深水埗相片集：</strong>本展覽區塊所使用的照片均由團隊親身走訪深水埗實地拍攝，旨在如實呈現該區街頭、公共設施與日常空間的氛圍。
+                    <br><span style="font-size: 0.85rem; color: var(--text-muted);">倫理與隱私保護說明：圖片均不呈現任何可辨識個人面貌或具體地理位置。</span>
                 </p>
             </div>
 
-            <div class="gallery-wrapper">
+            <div class="gallery-wrapper" style="margin-bottom: 35px;">
                 <button class="carousel-btn prev" id="prevBtn" onclick="scrollCarousel(-1)" aria-label="上一張">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
@@ -1422,67 +1394,236 @@
 
                 <div class="gallery-carousel" id="galleryCarousel">
                     <div class="gallery-card">
-                        <div class="gallery-card-img" onclick="openLightbox('IMG_7446 (1).jpg')">
-                            <img src="IMG_7446 (1).jpg" alt="深水埗街景印象" loading="lazy">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_3555.jpg')">
+                            <img src="IMG_3555.jpg" alt="深水埗街景印象" loading="lazy">
                         </div>
                         <div class="gallery-card-info">
-                            <div class="gallery-card-title">深水埗街景</div>
-                            <div class="gallery-card-desc">老舊街區與基層交會的日常巷弄</div>
+                            <div class="gallery-card-title">通州街公園</div>
+                            <div class="gallery-card-desc">公眾的休憩之地，無家者的棲身之所</div>
                         </div>
                     </div>
 
                     <div class="gallery-card">
-                        <div class="gallery-card-img" onclick="openLightbox('IMG_7446 (1).jpg')">
-                            <img src="IMG_7446 (1).jpg" alt="夜間公園長椅" loading="lazy">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_3569.jpg')">
+                            <img src="IMG_3569.jpg" alt="夜間公園長椅" loading="lazy">
                         </div>
                         <div class="gallery-card-info">
-                            <div class="gallery-card-title">夜間公園長椅</div>
-                            <div class="gallery-card-desc">許多無家者在此短暫休息，卻常遭驅趕</div>
+                            <div class="gallery-card-title">夜間公園</div>
+                            <div class="gallery-card-desc">腿部多處有傷口及包紮的兩人，坐在雜物與紙箱旁休息。</div>
                         </div>
                     </div>
 
                     <div class="gallery-card">
-                        <div class="gallery-card-img" onclick="openLightbox('IMG_7446 (1).jpg')">
-                            <img src="IMG_7446 (1).jpg" alt="24小時快餐店" loading="lazy">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_3577.jpg')">
+                            <img src="IMG_3577.jpg" alt="24小時快餐店" loading="lazy">
                         </div>
                         <div class="gallery-card-info">
-                            <div class="gallery-card-title">24小時快餐店</div>
-                            <div class="gallery-card-desc">深夜時分避寒與尋求溫暖安全感的庇護點</div>
+                            <div class="gallery-card-title">居所</div>
+                            <div class="gallery-card-desc">以帆布、雨傘及雜物臨時搭建的棲身空間，佈滿衣物與日常用品。</div>
                         </div>
                     </div>
 
                     <div class="gallery-card">
-                        <div class="gallery-card-img" onclick="openLightbox('IMG_7446 (1).jpg')">
-                            <img src="IMG_7446 (1).jpg" alt="社區中心門口" loading="lazy">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_3579.jpg')">
+                            <img src="IMG_3579.jpg" alt="社區中心門口" loading="lazy">
                         </div>
                         <div class="gallery-card-info">
-                            <div class="gallery-card-title">NGO</div>
-                            <div class="gallery-card-desc">社工連結資源與提供物資支援的核心據點</div>
+                            <div class="gallery-card-title">物資</div>
+                            <div class="gallery-card-desc">放置在簡易層架上的食物與飲水。</div>
                         </div>
                     </div>
 
                     <div class="gallery-card">
-                        <div class="gallery-card-img" onclick="openLightbox('IMG_7446 (1).jpg')">
-                            <img src="IMG_7446 (1).jpg" alt="天橋下空間" loading="lazy">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7452.jpg')">
+                            <img src="IMG_7452.jpg" alt="天橋下空間" loading="lazy">
                         </div>
                         <div class="gallery-card-info">
-                            <div class="gallery-card-title">天橋下空間</div>
-                            <div class="gallery-card-desc">遮風避雨的暫居處，卻充滿空間控制力道</div>
+                            <div class="gallery-card-title">保安人員</div>
+                            <div class="gallery-card-desc">於夜間的通州街公園執行職務。</div>
                         </div>
                     </div>
 
                     <div class="gallery-card">
-                        <div class="gallery-card-img" onclick="openLightbox('IMG_7446 (1).jpg')">
-                            <img src="IMG_7446 (1).jpg" alt="自助洗衣店角" loading="lazy">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7634.jpg')">
+                            <img src="IMG_7634.jpg" alt="自助洗衣店角" loading="lazy">
                         </div>
                         <div class="gallery-card-info">
-                            <div class="gallery-card-title">公園</div>
-                            <div class="gallery-card-desc">遮風避雨的暫居處</div>
+                            <div class="gallery-card-title">公園角落</div>
+                            <div class="gallery-card-desc">以木板、雨傘及雜物圍起的棲身空間，擺放著生活物資與隨身物品。</div>
                         </div>
                     </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7752.jpg')">
+                            <img src="IMG_7752.jpg" alt="自助洗衣店角" loading="lazy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <div class="gallery-card-title">同路舍（ImpactHK）</div>
+                            <div class="gallery-card-desc">位於大角咀橡樹街29號的同路舍社區中心招牌。</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7701.jpg')">
+                            <img src="IMG_7701.jpg" alt="自助洗衣店角" loading="lazy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <div class="gallery-card-title">充電站</div>
+                            <div class="gallery-card-desc">同路舍（ImpactHK）為無家者提供免費手機充電、義工協助管理線材與物資的後勤角落。</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7717.jpg')">
+                            <img src="IMG_7717.jpg" alt="自助洗衣店角" loading="lazy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <div class="gallery-card-title">護士當值處</div>
+                            <div class="gallery-card-desc">同路舍（ImpactHK）029 內提供基本醫療護理及物資儲備的護士當值空間。</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7719.jpg')">
+                            <img src="IMG_7719.jpg" alt="自助洗衣店角" loading="lazy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <div class="gallery-card-title">日常家電</div>
+                            <div class="gallery-card-desc">同路舍（ImpactHK）029 內提供洗衣及煮食設備的後勤空間</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7814.jpg')">
+                            <img src="IMG_7814.jpg" alt="自助洗衣店角" loading="lazy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <div class="gallery-card-title">北河同行</div>
+                            <div class="gallery-card-desc">位於深水埗大南街278號。</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7809.jpg')">
+                            <img src="IMG_7809.jpg" alt="自助洗衣店角" loading="lazy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <div class="gallery-card-title">北河飯店老闆「明哥」</div>
+                            <div class="gallery-card-desc">長期於深水埗以廉價飯菜及派飯方式，幫助區內無家者及基層街坊。</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-card-img" onclick="openLightbox('IMG_7604.jpg')">
+                            <img src="IMG_7604.jpg" alt="自助洗衣店角" loading="lazy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <div class="gallery-card-title">跑緣（Runners）</div>
+                            <div class="gallery-card-desc">位於深水埗基隆街122號地舖，會定期向區內無家者派發飯盒，並提供傷口護理及清洗服務。</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-card-img" onclick="openLightbox('3bc43637-6fee-42af-9fe6-f14f34d57b25.jpg')">
+                            <img src="3bc43637-6fee-42af-9fe6-f14f34d57b25.jpg" alt="自助洗衣店角" loading="lazy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <div class="gallery-card-title">傷口護理</div>
+                            <div class="gallery-card-desc">義工戴上手套，於路邊為坐輪椅的露宿者仔細清洗及包紮腿部傷口。</div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+
+            <!-- 2. 受訪故事區塊 -->
+            <div class="story-tabs">
+                <button class="tab-btn active" onclick="showStory(0)">阿B：公共空間生存與機構支援</button>
+                <button class="tab-btn" onclick="showStory(1)">葉先生與A先生：化緣生存與身體局限</button>
+                <button class="tab-btn" onclick="showStory(2)">孫先生：高齡、哮喘與公屋輪候</button>
+            </div>
+
+            <!-- 阿B (Keep 'active') -->
+            <div class="story-content active">
+                <div class="story-card-header">
+                    <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
+                    <div class="story-profile">
+                        <h3>無家者 阿B（約 39 歲）</h3>
+                        <p>麥當勞留宿者，現於深水埗生活逾十年</p>
+                    </div>
+                </div>
+                <p>阿B今年三十九歲，露宿的日子合計已經十餘年。他的生活範圍很小，從未離開過深水埗，最多只走到大角咀一帶，整個深水埗就是他的世界。他說，之所以會在通州街公園留宿，只是因為經常在那裡出沒，與同一群人聚在一起，很自然便會聚集到那些地方。</p><br>
+                <p>每日生活十分簡單，清晨六時左右起床，起床後無所事事便四處走動，走一陣子，與附近的人閒聊，累了就睡，每日等待派發三餐，天黑後又到處亂走，如此便是一日。日子就是這樣不斷重複。</p><br>
+                <p>關於社福機構的支援，阿B表示其實經常有社工前來了解他們的需要，但很多都不是實質的幫助。他坦白地說：「好多都係派個飯就走，不過可能人哋能力都有限，其實可能都想幫嘅。又有可能人哋想幫你，但係幫得一次你令到佢失望。畢竟呢度啲人你知啦，幫佢一次或者你買啲嘢畀佢，或者畀部電話佢，轉個頭佢就走去賣咗攞嚟吸毒。所以有時啲人想幫你，但係幫完你又咁，一次兩次咁人哋點幫。」但他也補充，並非每個人都是如此，也有部分人是值得幫助的。</p><br>
+                <p>被問及期望政府或機構如何協助，阿B的回答很直接：「政府就唔好奢望，私人機構都還可以幫下，起碼可以派下飯，探訪下問候下。政府嗰啲到今日有做過啲咩啊？連外籍人士每朝嚟派包派熱咖啡，巴基斯坦籍，每朝六點半左右就會嚟。連外籍人士都咁，反觀香港政府，淨係知道加稅。」</p><br>
+                <p>阿B目前有領取綜合社會保障援助，每月大約三至五千港元。公屋是近幾個月才開始輪候，因為有同路舍的社工主動協助申請。他對同路舍的評價很高：「呢間同路舍係真係幫到人嘅，幫到手嘅地方有太多，除咗錢樣樣到位。錢真係冇辦法嘅，因為都冇可能，如果個個都知個到有錢派，咁個個都沖去個到啦。同埋邊有咁多資金，人地都係一個老板攞筆錢出嚟搞呢個同路舍，都係資金有限。都理解到啲機構其實都能力有限，唔係跌嚿錢出嚟就有個機構，都要經營去培育先成為到機構。畀人睇到今時今日嘅同路舍真係可以幫到人，而唔單止係派飯，而係各方面。」</p><br>
+                <p>阿B從前亦曾在通州街公園露宿一段時間，但後來不敢再在那裡留宿。原因是他腳部的傷口在公園居住期間遭到蒼蠅叮咬而潰爛，需送往公立醫院治療。雖然該處有醫療機構會前來協助清洗傷口，但那次經歷令他印象深刻。之後他便轉往麥當勞過夜，他說：「天氣熱，係麥當勞瞓覺有冷氣都會舒服啲，只要唔好太過分都唔會趕你走。一個人一張枱趴喺度就算啦，唔好伸直隻腳又各樣那樣，都唔好堆晒啲嘢喺到就OK。」他透露其實有許多無家者都在麥當勞留宿，尤其是黃金商場附近那一家。</p><br>
+                <p>然而公園始終存在安全隱患。阿B上星期便在通州街公園遭人偷去所有財物，兩部手提電話及五千元現金全部失去。他說：「依家咩都冇，全身最值錢係張身份證，仲要已經攝喺睡袋入邊，都畀人攞把刀仔𠝹。對方都已經觀察咗好耐，都已經唔犯人但係人哋都要咁。」他表示若發現有人盜竊，通常會報警處理，可惜連人也找不到，更遑論索償。他解釋當日突然返回通州街公園留宿，是因為喝了少許酒——他平日並不飲酒，當天喝了幾罐啤酒後便在那裡睡著，雖然有套上睡袋，最終仍然遭到盜竊。</p><br>
+                <p>談到將來，阿B表示完全不期望政府能夠做些甚麼。他最希望私人機構能夠協助他們這些真正願意改過的人盡快獲得公屋。他認真地說：「有瓦遮頭真係好緊要，可以改變好多。例如我自己，有瓦遮頭，我就會調養自己嘅身體去搵份適合自己嘅工，可以自力更生。」</p>
+
+                <div class="story-tags">
+                    <span class="story-tag-pill">麥難民 (McSleepers)</span>
+                    <span class="story-tag-pill">公立醫療資源</span>
+                    <span class="story-tag-pill">公屋輪候困境</span>
+                </div>
+            </div>
+
+            <!-- 葉先生與A先生 (Removed 'active') -->
+            <div class="story-content">
+                <div class="story-card-header">
+                    <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
+                    <div class="story-profile">
+                        <h3>無家者 葉先生（約 67 歲）與 A先生（約 51 歲）</h3>
+                        <p>因緣際會的兩代人，現於深水埗通州街公園生活約五年/兩個月</p>
+                    </div>
+                </div>
+                <p>通州街公園的一角，葉先生與A先生的「家當」整整齊齊地擺放在一隅。葉先生今年六十七歲，在這裡已經生活了五、六年；A先生五十一歲，來到通州街公園只有兩個多月。兩人相識不久，但感情深厚，A先生認了葉先生作義父，每日一同生活，互相照應。</p><br>
+                <p>葉先生與A先生每日的生活節奏，由清晨七時多八時開始。那時候，公園裡會有前來做早操的人，喧鬧不已，天色早已大亮，想繼續睡也睡不著。之後他們便出發前往尖沙咀金馬倫道化緣。每日早上出去，中午十二時多回來，有時運氣好會早一些；休息一陣，下午兩三時又再出去，四五時才返回。他們兩人通常會結伴同行，有個伴侶，互相也有個照應。</p><br>
+                <p>化緣的收入近來減少了，因為多了許多遊客，從前好心人會給予十元二十元，如今不及從前多。偶爾仍會遇到好心人，但整體而言，收入並不穩定。</p><br>
+                <p>由於他們早上和下午都要外出，經常會錯過機構派發物資的時間。很多時候回來，飯已經派完，連飯也沒得吃。他們表示，有些機構下午四五時便前來派飯，但像他們這些要外出「開工」的人，七八時才回到公園，怎麼還會有剩？「就算一般返工，你都係六七點先返到屋企，四五點派真係太早。」A先生這樣說。幸好的是，明哥星期四、六都會派飯，兩餸一湯，有時還會派發飯票。另外，如果遇到熟人，有時會幫忙多取一個飯，然後藏在隱蔽的地方遮蓋好，待他們回來時有飯可吃。A先生說：「你見我哋兩個人住，有時我拎兩個飯，咁要人哋信先得㗎，有啲人唔信，因為淨係見到一個人。」</p><br>
+                <p>關於衣物的需要，他們表示最希望可以有一些設有拉鏈袋的褲子。A先生解釋：「畀嘅褲連褲袋都冇，身份證咁嘅重要物品都冇地方放。希望可以有拉鏈袋，橡筋褲頭，夠闊身唔好窄，窄嘅褲會好焗。」他說每次向同路舍索取褲子，都不會獲發一條有口袋的褲。衣物方面，主要靠A先生手洗，葉先生有需要的時候，A先生都會盡力幫忙。冬天會有人前來派發衣物，但也要湊巧在場才能領取。洗澡方面，他們會結伴前往附近的運動場，十一時前要使用完設施，有時也只能用洗手盆的水抹身洗衣就算了。</p><br>
+                <p>他們都試過被人偷竊。葉先生說，如果左右鄰舍在場，請他們幫忙看顧，大家都會願意幫忙。但公園始終是公眾地方，人來人往，治安始終是一個問題。</p><br>
+                <p>談到工作與生活的困境，A先生的說話很值得令人深思。他說：「職業無分貴賤，但警察就係咁諗，唔允許我哋咁樣生存。我哋係無家者，想工作又冇，連屋企都冇。我自己仲有糖尿病，腳上嘅傷口癒合唔到，根本無法工作。而警察唔會明白，只會當你行乞犯法，又冇人去報道。」他強調：「我係無家者，我都想自食其力，搵份清潔工，四五百蚊都好，都費事去行乞。但身體上真係冇辦法，無人請。隻腳嘅傷口令到着鞋都冇辦法，警察都係唔會理，只會講你走。」他說選擇留在通州街公園，只是因為這裡有物資派發，不會餓死。假如有工作機會，例如看更、看倉庫一類的保安工作，有人聘請的話他都會去做，但「有人請先得㗎」。</p><br>
+                <p>談到綜合社會保障援助，A先生表示政府只給予三千多元，平均每日只有一百元，要應付兩餐飯一個早餐，還要應付看病，怎麼會夠用？他說：「政府嘅高官加人工，加五六千一個月已經多過我哋綜援。」關於行乞，他有一個很大膽的建議：「無家者去行乞唔可以趕，我係真係無家，唔係住靚屋，唔係無所事事先走去乞。好手好腳我唔去做嘢就係我錯，但係我隻腳真係無辦法。然而你都仲當我係正常人咁趕絕我，咁我可以點？我只可以靠別人嘅施捨，我又唔搶又唔偷，都係人哋願意畀錢我。政府應該要豁免，例如連麻雀館都有發牌，咁不如都發牌俾我哋行乞。」</p><br>
+                <p>關於毒品問題，A先生的看法很直接：「你睇好似大陸咁，有錢都買唔到毒品，點可以怪我？香港咁氾濫，係政府嘅錯。」他說自己嘗試過很多次戒毒，去過很多戒毒機構，有改過的心，但戒完出來又再吸食。之前在教會自願戒毒一年，出來守了四個月又再吸食。他說：「我哋知醒㗎，嘗試咗好多次去戒，戒完出嚟又食，我都唔知點解。當然都知百害而無一利，毒品一點好處都無。一句講晒，都係政府監管不足。」</p><br>
+                <p>葉先生其實有公屋單位，是一至二人單位，位於偉智街美映樓，大約一九九零年左右開始輪候。他原本住在白田邨，後來親人離世，由四人單位轉為一至二人單位。但他很少回去住，因為回到家中只有自己一人，煮食不方便，寧願返回通州街公園，吃別人派發的飯盒。他說住公屋的開支會增加，所以間中才回去收取信件和清潔，最後還是回到公園睡覺。有機構的社工曾經勸葉先生入住老人院，但他不願意，不習慣那種生活。他說如果入住老人院，綜援的金額會被全部扣除作為生活費，自己沒有錢可以支配。A先生暫時未有輪候公屋，因為他來到通州街只有兩個多月，但目前有社工跟進他的情況。</p><br>
+                <p>談到這裡的生活環境，他們表示衛生情況比較差。床褥是黑色的，下雨過後繼續濕透，濕了又再乾，就是這樣過日子。蚊蟲也很多，幸好有時會有人送來蚊香。平日身體不適，他們會直接召喚救護車前往明愛醫院，或者服用一些成藥。他們都知道有些機構會前來公園協助清洗傷口，這些服務對他們來說十分重要。</p><br>
+                <p>每日午後，都會有些表演團體在公園表演。A先生表示他會觀看，但不會反對也不會贊成。他覺得：「大家都係一個反面教材，可以俾啲學生睇吓，為呢啲學生同街坊好。」</p><br>
+                <p>訪問最後，A先生認真地說：「好支持為無家者發聲，假如係真心為無家者發聲，咁都好贊成。有啲人真係生活喺水深火熱之中，政府真係唔了解。好似我自己咁，無家可歸，唔係走埋呢堆人，咁可以走去邊？」他認為許多無家者的困境都是因為欠缺發聲的機會，政府不了解他們的實際需要，也不願意去了解。</p><br>
+                <p>這對在通州街公園相遇的兩代人，一個六十七歲，一個五十一歲，因為緣份而成為義父子，每日一同面對風吹雨打、蚊叮蟲咬，一起為三餐奔走，互相扶持。他們的故事，正是香港無家者社群裡面最真實的縮影。</p><br>
+                <div class="story-tags">
+                    <span class="story-tag-pill">身體殘疾與就業</span>
+                    <span class="story-tag-pill">公屋空置</span>
+                    <span class="story-tag-pill">化緣維生</span>
+                </div>
+            </div>
+
+            <!-- Sam / 受訪者X (Removed 'active') -->
+            <div class="story-content">
+                <div class="story-card-header">
+                    <div class="story-avatar"><i class="fa-solid fa-blind"></i></div>
+                    <div class="story-profile">
+                        <h3>無家者 孫先生（約 64 歲）</h3>
+                        <p>清潔工到哮喘者的生存轉向，現於深水埗通州街公園生活約8年</p>
+                    </div>
+                </div>
+                <p>孫先生的「家當」很簡單，一張自己購買的摺床，幾件衣服，以及一些日常用品。他今年六十四歲，露宿的日子合計已經十餘年。</p><br>
+                <p>這十多年間，他去過很多地方：觀塘、紅磡、油麻地、旺角、深水埗地鐵站……每一處都留下過足跡，每一處都只是短暫的落腳點。直到二零一九年，他來到通州街公園，便再也沒有離開過。為何？因為這裡的物資比其他地方多，至少不會捱餓，至少有人會記得他們這一群人。這裡，便成為了他留得最久的地方。</p><br>
+                <p>孫先生從前做過清潔工，二零一六年那時，他還會自己去尋找判頭，做一些臨時工作，幫補生計。但年紀漸長，體力衰退，近半年更開始出現哮喘，身體已經無法應付工作，便沒有再做。他現時依靠綜合社會保障援助生活，因為有傷殘狀況，每月大約有五千元。他表示六十五歲才有資格輪候公屋，現時已輪候了一年，還需要再等數年才有機會。</p><br>
+                <p>孫先生的日常生活很有規律。清晨六時便要起床收拾物品，因為公園要讓給街坊晨運。早餐他會獨自去吃粥品和喝茶，簡簡單單又是一餐。大部分晚餐都有機構派發飯盒，星期二至六均有供應，機構偶爾會派發日用品和零食，幫補一下。他表示有社工不時前來與他傾談，詢問他有沒有需要，例如輪候公屋、衣物、鞋子之類。他覺得暫時都足夠，不需要特別再領取。</p><br>
+                <p>談到公園的生活環境，孫先生表示這裡環境不好、一般而已。下雨的時候，便睡進去一點，否則也沒有辦法。他不搭建臨時帳篷，因為覺得空氣流通較好。為了減少蚊蟲，他會使用蚊香，丟垃圾會丟得遠一些，這樣便沒那麼容易引來老鼠和曱甴。公廁的浴室衛生一般，但尚且可以忍受。他不擔心被人偷竊，因為他的家當來來去去都只是那幾件衣服，沒有什麼貴重物品值得偷竊。</p><br>
+                <p>如果生病的話，孫先生會前往醫院，因為領取綜援可以免費就醫。他平日也有定期到明愛醫院覆診，跟進身體狀況。他覺得機構有幫上忙，尤其是同路舍，協助他申請公屋，這是他覺得最實際的支援。</p><br>
+                <p>被問及與其他人的關係，孫先生表示與公園裡的人關係尚可，空閒時便聊聊天，有時也會與社工傾談，日子就是這樣一天一天地過。</p><br>
+                <p>談到將來，孫先生表示沒有什麼特別期望，只是希望有更多洗澡的地方、有臨時房屋可以暫住，這樣便已經很好。他現時六十四歲，等待六十五歲申請公屋，希望有生之年可以有一個真正的棲身之所。</p><br>
+                <p>孫先生的故事，或許不算最轟烈，但正正是他的平凡與低調，反映了香港無數無家者的真實寫照，他們不是不願意努力，而是年紀大了、身體差了，已經再沒有力氣去改變什麼，只是想安安靜靜地過日子，有一天，可以有個屬於自己的地方。</p>
+
+                <div class="story-tags">
+                    <span class="story-tag-pill">高齡無家者</span>
+                    <span class="story-tag-pill">哮喘與高齡體力衰退</span>
+                    <span class="story-tag-pill">十年露宿經歷</span>
+                </div>
             </div>
         </div>
 
@@ -1543,13 +1684,8 @@
                 </div>
             </div><br>
             <div class="info-card">
-                <h3 style="color: var(--primary-color); margin-bottom: 12px;"><i class="fa-solid fa-video"></i> 第一人稱視角與去獵奇化</h3>
-                <p>主流媒體對無家者的報導常流於「獵奇悲情」或「破壞治安」的兩極化想像。本計畫採取<strong>紀錄片式第一人稱視角（First-person Documentary Approach）</strong>與參與式視覺創作策略：</p>
-                <ul style="padding-left: 20px; margin-top: 10px;">
-                    <li><strong>去標籤化視角：</strong>鏡頭不再居高臨下俯視，而是平視對照，呈現參與者的日常尊嚴與生活細節。</li>
-                    <li><strong>主觀路徑記錄：</strong>讓參與者自主決定被拍攝的物件、光影或空間，引導觀者走入其情感記憶與日常挑戰。</li>
-                    <li><strong>結構性轉向：</strong>透過敘事設計，將觀者注意力從「這人做了什麼選擇」轉向「是怎樣的房租、制度與空間設計將他推至此地」。</li>
-                </ul>
+                <h3 style="color: var(--primary-color); margin-bottom: 12px;"><i class="fa-solid fa-video"></i>  影片簡介</h3>
+                <p>這是一條關於深水埗無家者的紀錄短片。片中走訪露宿者、街坊與服務機構，呈現他們的日常生活、生存方式，以及街坊之間的不同看法。影片同時探討派飯、公屋、失業、毒品與援助依賴等問題，反映離開街頭並非單靠援助就能解決。最終希望觀眾更立體地認識無家者的處境，而不是停留在單一印象。</p>
             </div>
 
             <h3 style="color: var(--primary-color); text-align: center; margin: 25px 0 15px 0;">研究倫理與知情同意原則</h3>
@@ -1562,7 +1698,7 @@
                 <div class="ethics-card">
                     <i class="fa-solid fa-camera-retro"></i>
                     <h3>拍攝同意選擇權</h3>
-                    <p>參與者有權拒絕任何形式的影像記錄。若同意拍攝，僅限於不露臉的肢體、物品或背景抽象攝影。</p>
+                    <p>參與者有權拒絕任何形式的影像記錄。若同意拍攝，除非得到當事人額外許可，否則僅限於不露臉的肢體、物品或背景攝影。</p>
                 </div>
                 <div class="ethics-card">
                     <i class="fa-solid fa-door-open"></i>
@@ -1571,19 +1707,19 @@
                 </div>
                 <div class="ethics-card">
                     <i class="fa-solid fa-file-contract"></i>
-                    <h3>知情同意過程</h3>
-                    <p>研究人員須以參與者最熟悉的語言，清晰解釋研究目的、範疇與潛在風險，經口頭或書面確認同意後方可進行。</p>
+                    <h3>知情同意</h3>
+                    <p>研究人員已以參與者最熟悉的語言，清晰解釋研究目的、範疇與潛在風險，經口頭或書面確認同意後進行。</p>
                 </div>
             </div>
         </div>
 
         <!-- 3.1 主要實證研究結果 -->
         <div id="p3-1" class="page-section">
-            <h2 class="page-title"><i class="fa-solid fa-chart-pie"></i> 主要實證研究結果</h2>
+            <h2 class="page-title"><i class="fa-solid fa-chart-pie"></i> 主要研究結果</h2>
 
             <!-- Overview Banner -->
             <div class="info-card highlight-card">
-                <p>本研究整合 <strong>24 場深度質性訪談</strong> 的實證數據，涵蓋 9 位無家者（39–70歲）、11 個社區持份者（居民、商戶、清潔工、保安）及 4 個前線支援機構（社工與護士）。研究揭示露宿成因的複雜性、撕裂公眾刻板印象，並歸納出無家者在日常生活與制度層面的多重困境。</p>
+                <p>本研究整合 <strong>24 場深度質性訪談</strong> 的實證數據，涵蓋 9 位無家者（39–70歲）、11 個社區持份者（居民、商戶、清潔工、保安）及 4 個前線支援機構職員。研究揭示露宿成因的複雜性、撕裂公眾刻板印象，並歸納出無家者在日常生活與制度層面的多重困境。</p>
             </div>
 
             <!-- Stats Grid -->
@@ -1598,11 +1734,11 @@
                 </div>
                 <div class="stat-card">
                     <span class="stat-number">11</span>
-                    <span class="stat-label">社區持份者小組</span>
+                    <span class="stat-label">社區持份者</span>
                 </div> 
                 <div class="stat-card">
                     <span class="stat-number">4</span>
-                    <span class="stat-label">前線支援機構</span>
+                    <span class="stat-label">前線支援機構職員</span>
                 </div>
             </div>
 
@@ -1616,7 +1752,7 @@
                     </div>
                     <div class="sub-card">
                         <h4><i class="fa-solid fa-brain"></i> 精神健康與空間適應</h4>
-                        <p>67歲何女士獲配公屋，但因行動不便、精神疾患及對密閉空間的孤獨恐懼，最終選擇重返街頭。</p>
+                        <p>葉先生獲配公屋，但因孤獨恐懼，最終選擇行走上街頭。</p>
                     </div>
                     <div class="sub-card">
                         <h4><i class="fa-solid fa-people-arrows"></i> 社交與支持網絡斷裂</h4>
@@ -1662,7 +1798,7 @@
                         <h4> 居住環境與安全威脅</h4>
                         <ul>
                             <li>需忍受惡劣環境與蚊虫鼠患。</li>
-                            <li>財物安全堪憂（阿山需貼著肚子睡覺防偷；阿B曾遭持刀割開睡袋劫去 $5,000）。</li>
+                            <li>財物安全堪憂（阿B曾遭持刀割開睡袋劫去 $5,000）。</li>
                             <li>執法部門突擊清場常沒收個人睡具與物品。</li>
                         </ul>
                     </div>
@@ -1670,7 +1806,7 @@
                         <h4> 經濟困頓與抉擇衝突</h4>
                         <ul>
                             <li>僅靠數千元綜援維生，缺乏衣物收納條件。</li>
-                            <li><strong>生存抉擇：</strong>覆診時間常與免費派飯時間重疊，被迫在「醫療」與「溫飽」之間二選一。</li>
+                            <li>覆診時間常與免費派飯時間重疊，被迫在「醫療」與「溫飽」之間二選一。</li>
                         </ul>
                     </div>
                     <div class="sub-card border-top-info">
@@ -1702,7 +1838,7 @@
                     </div>
                     <div class="list-item">
                         <span class="badge badge-warning">預期層面 Anticipated</span>
-                        <p>無家者形成「政府無法提供幫助」的消極心理。資源集中地被標籤為混亂區域，導致極弱勢者（如何女士）寧可選擇無資源的港鐵站出口也不願進入公園求助。</p>
+                        <p>無家者形成「政府無法提供幫助」的消極心理。資源集中地被標籤為混亂區域，導致極弱勢者寧可選擇無資源的港鐵站出口也不願進入公園求助。</p>
                     </div>
                     <div class="list-item">
                         <span class="badge badge-danger">內化層面 Internalized</span>
@@ -1742,52 +1878,77 @@
         <div id="p4-1" class="page-section">
             <h2 class="page-title"><i class="fa-solid fa-lightbulb"></i>研究結果分析與可操作政策建議</h2>
             
-            <div class="info-card">
-                <h3>研究結果分析</h3>
-                <div class="table-responsive" style="overflow-x: auto;">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>面向</th>
-                                <th>現狀問題</th>
-                                <th>具體建議</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>短期支援</strong></td>
-                                <td>庇護所居留期過短（一般僅3個月）</td>
-                                <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                            </tr>
-                            <tr>
-                                <td><strong>空間設計</strong></td>
-                                <td>XXXXXXXXXXXX</td>
-                                <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                            </tr>
-                            <tr>
-                                <td><strong>XXXX</strong></td>
-                                <td>XXXXXXXXXXXX</td>
-                                <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <!-- 研究結果核心洞察分析 (Left-Border List) -->
+        <div class="info-card">
+            <h3 style="color: var(--primary-color); margin-bottom: 12px;"><i class="fa-solid fa-magnifying-glass-chart"></i> 研究結果分析：無家者處境的多元成因與支援需求</h3>
+            <p style="margin-bottom: 20px;">綜合訪談數據與個案觀察，無家者在重建生活的過程中主要面臨以下三項現實挑戰：</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="background: rgba(0,0,0,0.02); padding: 15px 20px; border-left: 4px solid var(--primary-color); border-radius: 0 8px 8px 0;">
+                    <h4 style="margin: 0 0 6px 0; color: var(--text-dark);"><i class="fa-solid fa-house-user" style="color: var(--primary-color); margin-right: 8px;"></i>居住穩定度與過渡期銜接需求</h4>
+                    <p style="margin: 0; font-size: 0.95rem; color: #555;">臨時住宿服務有其運作時限，而申請長期住房需時較長，無家者在過渡期間容易出現住宿中斷的情況；穩定的中長期居住環境才是建立穩定工作與健康生活的基礎。</p>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.02); padding: 15px 20px; border-left: 4px solid #f39c12; border-radius: 0 8px 8px 0;">
+                    <h4 style="margin: 0 0 6px 0; color: var(--text-dark);"><i class="fa-solid fa-clock-rotate-left" style="color: #f39c12; margin-right: 8px;"></i>日常生存、生活節奏與社區資源的協調</h4>
+                    <p style="margin: 0; font-size: 0.95rem; color: #555;">派飯時間、醫療覆診與就業尋找常在時間上重疊，友善的空間設計與完善的公共設施（如物品寄存區），結合靈活且定點的社區服務，能大幅減輕無家者在街頭生活時的安全與衛生負擔並提高支援效率。</p>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.02); padding: 15px 20px; border-left: 4px solid #17a2b8; border-radius: 0 8px 8px 0;">
+                    <h4 style="margin: 0 0 6px 0; color: var(--text-dark);"><i class="fa-solid fa-heart-circle-check" style="color: #17a2b8; margin-right: 8px;"></i>心理重建、尊嚴感與社會接納</h4>
+                    <p style="margin: 0; font-size: 0.95rem; color: #555;">長期的街頭生活容易讓個案產生無力感，個案往往經歷長期挫折，除了物質上的協助，來自社區的包容、適時的同理與正面溝通是建立互信與自我價值的起點，更能促進其重新融入社會。</p>
                 </div>
             </div>
+        </div>
+
+<!-- 具體支援優化建議表格 -->
+        <div class="info-card">
+            <h3 style="color: var(--primary-color); margin-bottom: 12px;"><i class="fa-solid fa-sliders"></i> 具體與可操作支援建議</h3>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">核心面向</th>
+                            <th style="width: 35%;">現實挑戰</th>
+                            <th style="width: 40%;">現實與需求</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>居住與過渡銜接</strong></td>
+                            <td>臨時住宿服務有其運作時限，而申請長期住房需時較長，無家者在過渡期間容易出現住宿中斷的情況。</td>
+                            <td>短期的臨時居所能提供即時庇護，但穩定的中長期居住環境才是建立穩定工作與健康生活的基礎。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>空間與社區資源</strong></td>
+                            <td>友善的空間設計與完善的公共設施（如物品寄存區），能大幅減輕無家者在街頭生活時的安全與衛生負擔。</td>
+                            <td>派飯時間、醫療覆診與就業尋找常在時間上重疊，靈活且定點的社區服務能提高支援效率。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>心理與社會接納</strong></td>
+                            <td>個案往往經歷長期挫折，除了物質上的協助，來自社區的包容與正面互動更能促進其重新融入社會。</td>
+                            <td>長期的街頭生活容易讓個案產生無力感，適時的同理與溝通是建立互信與自我價值的起點。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         <!-- 5. 政策倡議與教育介入 -->
         <section id="advocacy-education">            
             <div class="info-card" style="margin-bottom: 25px;">
                 <h3 style="color: var(--primary-color); margin-bottom: 10px;"><i class="fa-solid fa-child-reaching"></i> 兒童教育與西方歷史對照模式</h3>
-                <p>我們借鏡西方對於歷史創傷與弱勢權益的調查紀錄策略（如獲獎紀錄片《Sugarcane》對加拿大寄宿學校同化政策之紀錄與倡議模式），主張將社會平等議題向下扎根：</p>
-                <p>在<strong>兒童與青少年教育場域</strong>，透過繪本、體驗式教案與社區散步，引導學生從小建立對空間正義（Spatial Justice）的理解，避免世代相傳的偏見與標籤。」</p>
+                <p>我們借鏡西方對於歷史創傷與弱勢權益的調查紀錄策略（如獲獎紀錄片《Sugarcane》），主張將社會平等議題向下扎根，在兒童與青少年教育場域，透過紀錄片、網站與教案，引導學生從小建立對空間正義（Spatial Justice）的理解，避免世代相傳的偏見與標籤。</p>
             </div>
 
             <div class="action-list">
                 <div class="action-item">
                     <h3><i class="fa-solid fa-graduation-cap"></i> 給學生與教育工作者</h3>
                     <ul>
-                        <li>在校園推動無家者議題的專題研習，理解結構性成因而非歸咎個人。</li>
-                        <li>邀請前線社工或過來人進行分享，進行互動式同理心工作坊。</li>
-                        <li>學習識別並批判城市中的「防禦性建築」（Hostile Architecture）。</li>
+                        <li>將無家者議題融入中小學專題研習，作為跨學科學習的主題，引導學生從多角度認識無家者群體。</li>
+                        <li>引導學生從房屋政策、社會福利、經濟結構等宏觀角度理解無家者處境，避免將問題歸咎於個人選擇。</li>
+                        <li>運用紀錄片、網站與多媒體教材，將議題轉化為適合學生年齡的學習內容。</li>
+                        <li>透過課堂討論與社區認識，協助學生從小建立對弱勢群體的同理與尊重。</li>
                     </ul>
                 </div>
                 <div class="action-item">
@@ -1805,13 +1966,14 @@
         <!-- 5.1 參考文獻列表 -->
         <div id="p5-1" class="page-section">
             <h2 class="page-title"><i class="fa-solid fa-list-check"></i>參考文獻列表</h2>
+            <div class="info-card highlight-card">
+                <p>無家者議題涉及房屋政策、社會福利、醫療衛生等眾多層面。如欲對相關議題作更深入的了解，歡迎自行查閱。</p>
+            </div>            
             <div class="info-card">
                 <ul style="padding-left: 20px; line-height: 2;">
-                    <li>香港社區組織協會 (SoCO). (2023). 《香港無家者生活狀況及服務需求研究報告》.</li>
-                    <li>香港特別行政區政府社會福利署. (2024). 《露宿者統計資料庫》.</li>
-                    <li>Mitchell, D. (2003). <i>The Right to the City: Social Justice and the Fight for Public Space</i>. Guilford Press.</li>
-                    <li>Speer, J. (2018). "It's Not Safe for Anyone": The Policing of Homeless Encounters and Spatial Exclusion. <i>Urban Geography</i>.</li>
-                    <li>《Sugarcane》 (2024). Documentary directed by Emily Kassie and Julian Brave NoiseCat.</li>
+                    <li><a href="https://www.facebook.com/socohk/posts/%E5%9F%BA%E5%B1%A4%E7%A7%9F%E5%AE%A2%E5%B0%8D%E5%8A%A3%E8%B3%AA%E5%8A%8F%E6%88%BF%E5%8F%8A%E7%B0%A1%E6%A8%B8%E6%88%BF%E6%94%BF%E7%AD%96%E6%84%8F%E8%A6%8B%E8%AA%BF%E6%9F%A5%E7%99%BC%E4%BD%88%E6%9C%83%E5%A0%B1%E5%91%8A%E6%A0%B9%E6%93%9A%E6%94%BF%E5%BA%9C%E6%9C%80%E6%96%B0%E8%AA%BF%E6%9F%A5%E9%A1%AF%E7%A4%BA%E5%85%A8%E6%B8%AF22%E8%90%AC%E4%BA%BA%E5%B1%85%E4%BD%8F%E5%8A%8F%E6%88%BF%E9%80%99%E4%BA%9B%E5%B1%85%E6%89%80%E7%92%B0%E5%A2%83%E6%83%A1%E5%8A%A3%E6%A8%93%E9%9D%A2%E9%9D%A2%E7%A9%8D%E4%B8%AD%E4%BD%8D%E6%95%B8%E5%83%8510%E5%B9%B3%E6%96%B9%E7%B1%B3%E4%B8%94%E7%B4%84%E4%B8%80%E6%88%90%E5%8A%8F%E6%88%BF%E7%BC%BA%E4%B9%8F%E9%81%A9%E7%95%B6%E9%80%9A%E9%A2%A8%E8%A8%AD%E6%96%BD%E9%80%99/1040492598104102/">香港社區組織協會 (SoCO). (2025). 基層租客對劣質劏房及簡樸房政策意見調查發佈會報告.</a></li>
+                    <li><a href="https://www.hb.gov.hk/tc/publications/housing/cwt/index.html">房屋局. (2026). 公屋綜合輪候時間.</a></li>
+                    <li><a href="https://www.info.gov.hk/gia/general/202601/21/P2026012100212.htm">社會福利署. (2025). 露宿者電腦資料系統</a></li>
                 </ul>
             </div>
         </div>
